@@ -30,6 +30,7 @@ body {
       rgba(40, 178, 180, 0.8)
     ),
     url(../img/code.jpg);
+  background-size: cover;
   height: 95vh;
   clip-path: polygon(0 0, 100% 0, 100% 83%, 50% 100%, 0 83%);
   animation: moveInTop 1s ease-out;
