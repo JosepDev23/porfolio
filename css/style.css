@@ -1,6 +1,7 @@
 :root {
-  --color-black: rgb(0, 0, 13);
-  --color-white: rgb(255, 255, 251);
+  --color-black: #000;
+  --color-white: #eee;
+  --color-gray: #444;
 }
 
 *,
@@ -9,6 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  z-index: 10;
 }
 
 html {
@@ -24,15 +26,9 @@ body {
 }
 
 .header {
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(111, 118, 213, 0.8),
-      rgba(40, 178, 180, 0.8)
-    ),
-    url(../img/code.jpg);
-  background-size: cover;
+  background: var(--color-gray);
   height: 95vh;
-  clip-path: polygon(0 0, 100% 0, 100% 83%, 50% 100%, 0 83%);
+  clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
   animation: moveInTop 1s ease-out;
 }
 
@@ -44,8 +40,14 @@ body {
   text-align: center;
 }
 
+.header__img {
+  height: 37rem;
+  width: 37rem;
+  border-radius: 50%;
+}
+
 .heading-primary {
-  color: var(--color-black);
+  color: var(--color-white);
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 5.1rem;
