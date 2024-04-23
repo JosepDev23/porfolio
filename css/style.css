@@ -183,19 +183,19 @@ body {
 
 @media only screen and (max-width: 600px) {
   html {
-    font-size: 40%;
+    font-size: 55%;
   }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   html {
-    font-size: 47.5%;
+    font-size: 57.5%;
   }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1400px) {
   html {
-    font-size: 55%;
+    font-size: 60%;
   }
 }
 
