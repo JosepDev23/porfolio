@@ -187,25 +187,19 @@ body {
 
 @media only screen and (max-width: 600px) {
   html {
-    font-size: 50%;
-  }
-  h1 {
     font-size: 30%;
   }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   html {
-    font-size: 55%;
-  }
-  h1 {
     font-size: 40%;
   }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1400px) {
   html {
-    font-size: 60%;
+    font-size: 55%;
   }
 }
 
