@@ -33,16 +33,17 @@ body {
 }
 
 .header__text-box {
-  position: absolute;
-  top: 43%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  padding: 1rem;
 }
 
 .header__img {
   height: 37rem;
   width: 37rem;
+  max-width: 90vw;
   border-radius: 50%;
 }
 
@@ -85,6 +86,7 @@ body {
   font-size: 1.6rem;
   border: none;
   cursor: pointer;
+  width: 35rem;
 }
 
 .btn:hover {
@@ -124,6 +126,7 @@ body {
   left: 0;
   z-index: -1;
   transition: all 0.4s;
+  width: 35rem;
 }
 
 .btn--animated {
