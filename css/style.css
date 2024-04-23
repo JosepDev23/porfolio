@@ -37,13 +37,14 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .header__img {
   height: 37rem;
   width: 37rem;
   max-width: 90vw;
+  max-height: 90vw;
   border-radius: 50%;
 }
 
@@ -188,11 +189,17 @@ body {
   html {
     font-size: 50%;
   }
+  h1 {
+    font-size: 30%;
+  }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   html {
     font-size: 55%;
+  }
+  h1 {
+    font-size: 40%;
   }
 }
 
