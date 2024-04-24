@@ -2,6 +2,7 @@
   --color-black: #000;
   --color-white: #eee;
   --color-gray: #444;
+  --color-green: #00ff41;
 }
 
 *,
@@ -20,9 +21,10 @@ html {
 body {
   background-color: var(--color-black);
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
   font-weight: 400;
-  line-height: 1.7;
+  font-style: normal;
 }
 
 .header {
@@ -46,11 +48,11 @@ body {
   max-width: 90vw;
   max-height: 90vw;
   border-radius: 50%;
+  margin-top: 5.1rem;
 }
 
 .heading-primary {
   color: var(--color-white);
-  text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 5.1rem;
 }
@@ -58,9 +60,8 @@ body {
 .heading-primary--main {
   display: block;
   font-size: 6rem;
-  font-weight: 700;
   letter-spacing: 0.5rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   animation: moveInLeft 1s ease-out 0.73s;
   animation-fill-mode: backwards;
 }
@@ -68,10 +69,52 @@ body {
 .heading-primary--sub {
   display: block;
   font-size: 2.3rem;
-  font-weight: 900;
   letter-spacing: 1.75rem;
   animation: moveInRight 1s ease-out 0.73s;
   animation-fill-mode: backwards;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100rem;
+  max-width: 90%;
+}
+
+.about-title {
+  color: var(--color-white);
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+.about-main {
+  color: var(--color-green);
+  text-align: center;
+  border: solid var(--color-white);
+  border-radius: 0.53rem;
+  padding: 2rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100rem;
+  max-width: 90%;
+}
+
+.projects-title {
+  color: var(--color-white);
+  font-size: 3rem;
+  margin: 2rem 0;
 }
 
 .btn,
