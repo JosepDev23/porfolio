@@ -132,6 +132,11 @@ main {
   text-align: center;
 }
 
+.project-container img {
+  height: 100%;
+  width: 100%;
+}
+
 .contact-divider {
   width: 100%;
   border-color: var(--color-gray);
