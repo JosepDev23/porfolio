@@ -92,7 +92,7 @@ main {
 
 .about-title {
   color: var(--color-white);
-  font-size: 3rem;
+  font-size: 3.7rem;
   margin: 2rem 0;
 }
 
@@ -102,6 +102,7 @@ main {
   border: solid var(--color-white);
   border-radius: 0.53rem;
   padding: 2rem;
+  font-size: 2rem;
 }
 
 .projects {
@@ -114,7 +115,7 @@ main {
 
 .projects-title {
   color: var(--color-white);
-  font-size: 3rem;
+  font-size: 3.7rem;
   margin: 2rem 0;
 }
 
@@ -273,7 +274,7 @@ main {
 
 @media only screen and (max-width: 600px) {
   html {
-    font-size: 40%;
+    font-size: 42%;
   }
 
   .projects-main {
