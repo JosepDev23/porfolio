@@ -1,0 +1,62 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="description"
+			content="My professional portfolio. Here you can see some of my projects that i developed in my free time. They are all open source. Don't doubt to check my github (JosepDev23)"
+		/>
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--color-black: #000;
+		--color-white: #eee;
+		--color-gray: #444;
+		--color-green: #00ff41;
+	}
+
+	*,
+	*::after,
+	*::before {
+		margin: 0;
+		padding: 0;
+		box-sizing: inherit;
+		z-index: 10;
+	}
+
+	html {
+		font-size: 62.5%;
+	}
+
+	body {
+		background-color: var(--color-black);
+		box-sizing: border-box;
+		font-family: "Source Code Pro", monospace;
+		font-optical-sizing: auto;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+</style>
