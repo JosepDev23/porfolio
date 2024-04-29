@@ -1,0 +1,61 @@
+<header class="header">
+  <div class="header__text-box">
+    <img class="header__img" src="img/me.jpg" alt="Josep's profile image" />
+    <h1 class="heading-primary">
+      <span class="heading-primary--main">Josep Ramon Ribera</span>
+      <span class="heading-primary--sub">Software Craftsman</span>
+    </h1>
+    <a href="#" class="btn btn--black btn--animated">
+      Page under development
+    </a>
+  </div>
+</header>
+
+<style>
+  .header {
+    background: var(--color-gray);
+    height: 95vh;
+    clip-path: polygon(0 0, 100% 0, 100% 83%, 0 100%);
+    animation: moveInTop 1s ease-out;
+  }
+
+  .header__text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .header__img {
+    height: 37rem;
+    width: 37rem;
+    max-width: 90vw;
+    max-height: 90vw;
+    border-radius: 50%;
+    margin-top: 5.1rem;
+  }
+
+  .heading-primary {
+    color: var(--color-white);
+    backface-visibility: hidden;
+    margin-bottom: 5.1rem;
+  }
+
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    letter-spacing: 0.5rem;
+    margin: 2rem 0;
+    animation: moveInLeft 1s ease-out 0.73s;
+    animation-fill-mode: backwards;
+  }
+
+  .heading-primary--sub {
+    display: block;
+    font-size: 2.3rem;
+    letter-spacing: 1.75rem;
+    animation: moveInRight 1s ease-out 0.73s;
+    animation-fill-mode: backwards;
+  }
+</style>
