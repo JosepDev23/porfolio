@@ -14,7 +14,7 @@ const AboutJson: React.FC = () => {
       <p>&nbsp;&nbsp;"programming-languages-and-frameworks": [</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;"typescript": "really-good",</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;"html": "really-good",</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;"css": "really-good",</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;"css/sass": "really-good",</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;"react": "really-good",</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;"angular": "really-good",</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;"astro": "good",</p>
@@ -24,6 +24,14 @@ const AboutJson: React.FC = () => {
       <p>&nbsp;&nbsp;&nbsp;&nbsp;"c#": "good",</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;"entity-framework": "medium",</p>
       <p>&nbsp;&nbsp;],</p>
+      <p>&nbsp;&nbsp;"soft-skills": [</p>
+      <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;"critical-thinking","communication","adaptability",
+      </p>
+      <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;"problem-solving","self-motivation","leadership"
+      </p>
+      <p>&nbsp;&nbsp;]</p>
       <p>&#125;</p>
     </div>
   )
