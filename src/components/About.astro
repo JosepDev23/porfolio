@@ -1,15 +1,24 @@
+---
+import Dropdown from './generic/Dropdown/CustomDropdown'
+---
+
 <section class="about">
-  <h1 class="about-title">About_me.txt</h1>
+  <div class="about-title-wrapper">
+    <h1 class="about-title">About_me</h1>
+    <Dropdown options={['.txt', '.json']} defaultOption=".txt" client:visible />
+  </div>
   <div class="about-main">
     <p class="about-description">
       I'm a web development-focused software engineer. I love creating and
       utilizing innovative technologies. TypeScript is my language of choice.
     </p>
+    <br />
     <p class="about-description">
       Most of my free time is spent designing and programming web applications,
       and I often enjoy experimenting with new technologies to discover cool
       things.
     </p>
+    <br />
     <p class="about-description">
       I'm also a musician, I graduated from my professional studies at the
       conservatory specializing in trumpet and piano. Later on, I taught myself
@@ -28,18 +37,24 @@
     margin-bottom: 5rem;
   }
 
+  .about-title-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
   .about-title {
     color: var(--color-white);
     font-size: 3.7rem;
-    margin: 2rem 0;
+    margin: 2rem 1.7rem;
   }
 
   .about-main {
     color: var(--color-green);
-    text-align: center;
+    text-align: left;
     border: solid var(--color-white);
     border-radius: 0.53rem;
     padding: 2rem;
     font-size: 2rem;
+    z-index: 5;
   }
 </style>

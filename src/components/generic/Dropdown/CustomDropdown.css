@@ -1,0 +1,36 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  background-color: black;
+  color: #eee;
+  border: none;
+  cursor: pointer;
+  display: flex;
+}
+
+.dropdown-btn h1 {
+  font-size: 3.6rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+}
+
+.dropdown-content .dropdown-option {
+  color: #eee;
+  background-color: black;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown-content .dropdown-option:hover {
+  background-color: #444;
+}
