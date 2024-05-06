@@ -9,6 +9,11 @@
   border: none;
   cursor: pointer;
   display: flex;
+  align-items: center;
+}
+
+.dropdown-btn:hover {
+  background-color: #444;
 }
 
 .dropdown-btn h1 {
