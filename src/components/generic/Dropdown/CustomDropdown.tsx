@@ -4,11 +4,17 @@ import './CustomDropdown.css'
 interface DropdownProps {
   options: string[]
   defaultOption: string
+  selectedOption: string
+  setSelectedOption: React.Dispatch<React.SetStateAction<string>>
 }
 
-const Dropdown: React.FC<DropdownProps> = ({ options, defaultOption }) => {
+const Dropdown: React.FC<DropdownProps> = ({
+  options,
+  defaultOption,
+  selectedOption,
+  setSelectedOption,
+}) => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
-  const [selectedOption, setSelectedOption] = useState<string | null>(null)
 
   const handleToggleDropdown = () => {
     setIsOpen(!isOpen)

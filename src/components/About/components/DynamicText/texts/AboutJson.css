@@ -1,0 +1,9 @@
+.about-main {
+  color: var(--color-green);
+  text-align: left;
+  border: solid var(--color-white);
+  border-radius: 0.53rem;
+  padding: 2rem;
+  font-size: 2rem;
+  z-index: 5;
+}
