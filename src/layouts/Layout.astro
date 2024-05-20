@@ -12,7 +12,7 @@ const { title } = Astro.props
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="My professional portfolio. Here you can see some of my projects that i developed in my free time. They are all open source. Don't doubt to check my github (JosepDev23)"
+      content="My professional portfolio. Here you can see some of my projects that i developed in my free time. Don't doubt to check my github (JosepDev23)"
     />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
@@ -35,6 +35,7 @@ const { title } = Astro.props
     --color-black: #000;
     --color-white: #eee;
     --color-gray: #444;
+    --color-light-gray: #777;
     --color-green: #00ff41;
   }
 
@@ -58,116 +59,6 @@ const { title } = Astro.props
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-  }
-  .btn,
-  .btn:link,
-  .btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.5rem 4rem;
-    display: inline-block;
-    border-radius: 10rem;
-    transition: all 0.2s;
-    position: relative;
-    font-size: 1.6rem;
-    border: none;
-    cursor: pointer;
-    width: 35rem;
-  }
-
-  .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-  }
-
-  .btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
-  }
-
-  .btn:active,
-  .btn:focus {
-    outline: none;
-    transform: translateY(-1px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-  }
-
-  .btn--black {
-    background-color: var(--color-black);
-    color: var(--color-white);
-  }
-
-  .btn--black::after {
-    background-color: var(--color-black);
-  }
-
-  .btn::after {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all 0.4s;
-    width: 35rem;
-  }
-
-  .btn--animated {
-    animation: moveInBottom 0.5s ease-out 1.75s;
-    animation-fill-mode: backwards;
-  }
-
-  @keyframes moveInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-10rem);
-    }
-    80% {
-      transform: translateX(1rem);
-    }
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
-  }
-
-  @keyframes moveInRight {
-    0% {
-      opacity: 0;
-      transform: translateX(10rem);
-    }
-    80% {
-      transform: translateX(-1rem);
-    }
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
-  }
-
-  @keyframes moveInBottom {
-    0% {
-      opacity: 0;
-      transform: translateY(3rem);
-    }
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
-  }
-
-  @keyframes moveInTop {
-    0% {
-      opacity: 0;
-      transform: translateY(-3rem);
-    }
-    100% {
-      opacity: 1;
-      transform: translate(0);
-    }
   }
 
   @media only screen and (max-width: 600px) {
