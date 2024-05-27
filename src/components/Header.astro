@@ -1,6 +1,9 @@
-<header class="header header_animation_infinite">
+<header class="header">
   <div class="header__text-box">
-    <img class="header__img" src="img/me.jpg" alt="Josep's profile image" />
+    <div class="header_img_container">
+      <div class="header_img"></div>
+      <img class="header_img_icon" src="img/icon.png" />
+    </div>
     <h1 class="heading-primary">
       <span class="heading-primary--main">Josep Ramon Ribera</span>
       <span class="heading-primary--sub">Software Craftsman</span>
@@ -23,13 +26,45 @@
     padding: 2rem;
   }
 
-  .header__img {
+  .header_img_container {
+    position: relative;
     height: 37rem;
     width: 37rem;
     max-width: 90vw;
     max-height: 90vw;
     border-radius: 50%;
     margin-top: 5.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header_img {
+    background-image: url(img/me.jpg);
+    background-size: contain;
+    height: 37rem;
+    width: 37rem;
+    max-width: 90vw;
+    max-height: 90vw;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .header_img_container:hover .header_img {
+    filter: blur(3px);
+  }
+
+  .header_img_container:hover .header_img_icon {
+    opacity: 1;
+  }
+
+  .header_img_icon {
+    height: 23rem;
+    width: 23rem;
+    position: relative;
+    filter: drop-shadow(5px 5px var(--color-white));
+    opacity: 0;
+    transition: opacity 0.3s ease;
   }
 
   .heading-primary {
