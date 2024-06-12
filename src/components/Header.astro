@@ -1,89 +1,74 @@
 <header class="header">
-  <div class="header__text-box">
-    <div class="header_img_container">
-      <div class="header_img" style={`background-image: url(./img/me.png);`}>
-      </div>
-      <img class="header_img_icon" src="img/icon.png" />
-    </div>
-    <h1 class="heading-primary">
-      <span class="heading-primary--main">Josep Ramon Ribera</span>
-      <span class="heading-primary--sub">Software Craftsman</span>
-    </h1>
-  </div>
+  <img class="header_img" src="img/me.png" />
+  <h1 class="heading_primary">
+    <span class="heading_chip">Open for business</span>
+    <span class="heading_name">Josep Ramon Ribera</span>
+    <span class="heading_sub">Software Craftsman | Typescript Enjoyer</span>
+  </h1>
 </header>
 
 <style>
   .header {
-    background: var(--color-gray);
-    height: 95vh;
-    clip-path: polygon(0 0, 100% 0, 100% 79%, 0 96%);
-  }
-
-  .header__text-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 2rem;
-  }
-
-  .header_img_container {
-    position: relative;
-    height: 37rem;
-    width: 37rem;
-    max-width: 90vw;
-    max-height: 90vw;
-    border-radius: 50%;
-    margin-top: 5.1rem;
+    height: 73vh;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .header_img {
-    background-size: contain;
-    height: 37rem;
-    width: 37rem;
-    max-width: 90vw;
-    max-height: 90vw;
-    border-radius: 50%;
-    position: absolute;
-    transition: filter 0.3s ease;
+    height: 21rem;
+    width: 21rem;
+    border: solid 0.4rem var(--color-white);
   }
 
-  .header_img_container:hover .header_img {
-    filter: blur(3px);
-  }
-
-  .header_img_container:hover .header_img_icon {
-    opacity: 1;
-  }
-
-  .header_img_icon {
-    height: 23rem;
-    width: 23rem;
-    position: relative;
-    filter: drop-shadow(5px 5px var(--color-white));
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-
-  .heading-primary {
+  .heading_primary {
     color: var(--color-white);
-    backface-visibility: hidden;
-    margin-bottom: 5.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 3rem;
   }
 
-  .heading-primary--main {
-    display: block;
+  .heading_chip {
+    font-weight: 400;
+    font-size: 1.7rem;
+    border: solid 0.1rem var(--color-purple);
+    color: var(--color-purple);
+    padding: 0.2rem 0.3rem;
+  }
+
+  .heading_name {
     font-size: 6rem;
     letter-spacing: 0.5rem;
     margin: 2rem 0;
   }
 
-  .heading-primary--sub {
-    display: block;
+  .heading_sub {
+    color: var(--color-yellow);
     font-size: 2.3rem;
-    letter-spacing: 1.75rem;
+    letter-spacing: 0.5rem;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .heading_chip {
+      display: none;
+    }
+
+    .header {
+      flex-direction: column;
+      height: 37vh;
+    }
+
+    .heading_name {
+      font-size: 4rem;
+      letter-spacing: 0.5rem;
+      margin: 2rem 0;
+    }
+
+    .heading_sub {
+      color: var(--color-yellow);
+      font-size: 1.3rem;
+      letter-spacing: 0.5rem;
+    }
   }
 </style>

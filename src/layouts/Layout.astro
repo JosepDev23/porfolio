@@ -32,10 +32,14 @@ const { title } = Astro.props
 
 <style is:global>
   :root {
-    --color-black: #000;
-    --color-white: #eee;
+    --color-black: #070007;
+    --color-white: #ddd;
     --color-gray: #444;
     --color-light-gray: #777;
+    --color-yellow: rgb(223, 223, 85);
+    --color-purple: rgb(255, 99, 255);
+    --color-dark-purple: rgb(63, 25, 63);
+    --color-darkest-purple: rgb(32, 12, 32);
     --color-green: #00ff41;
   }
 
@@ -53,7 +57,11 @@ const { title } = Astro.props
   }
 
   body {
-    background-color: var(--color-black);
+    background: radial-gradient(
+      ellipse 80% 80% at 50% -20%,
+      var(--color-darkest-purple),
+      var(--color-black)
+    );
     box-sizing: border-box;
     font-family: 'Source Code Pro', monospace;
     font-optical-sizing: auto;

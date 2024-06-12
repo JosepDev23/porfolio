@@ -1,5 +1,5 @@
 {
-  "name": "astro-portfolio",
+  "name": "josep-porfolio",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -19,5 +19,9 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.2",
+    "prettier-plugin-astro": "^0.14.0"
   }
 }
