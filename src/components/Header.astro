@@ -1,7 +1,6 @@
 <header class="header">
   <img class="header_img" src="img/me.png" />
   <h1 class="heading_primary">
-    <span class="heading_chip">Open for business</span>
     <span class="heading_name">Josep Ramon Ribera</span>
     <span class="heading_sub">Software Craftsman | Typescript Enjoyer</span>
   </h1>
@@ -29,14 +28,6 @@
     margin-left: 3rem;
   }
 
-  .heading_chip {
-    font-weight: 400;
-    font-size: 1.7rem;
-    border: solid 0.1rem var(--color-purple);
-    color: var(--color-purple);
-    padding: 0.2rem 0.3rem;
-  }
-
   .heading_name {
     font-size: 6rem;
     letter-spacing: 0.5rem;
@@ -50,24 +41,25 @@
   }
 
   @media only screen and (max-width: 1024px) {
-    .heading_chip {
-      display: none;
-    }
-
     .header {
       flex-direction: column;
       height: 37vh;
     }
 
+    .heading_primary {
+      align-items: center;
+      text-align: center;
+    }
+
     .heading_name {
-      font-size: 4rem;
+      font-size: 5rem;
       letter-spacing: 0.5rem;
       margin: 2rem 0;
     }
 
     .heading_sub {
       color: var(--color-yellow);
-      font-size: 1.3rem;
+      font-size: 2.3rem;
       letter-spacing: 0.5rem;
     }
   }
