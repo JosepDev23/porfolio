@@ -1,16 +1,11 @@
 import React from 'react'
-import './AboutTxt.css'
+import './AboutJson.css'
 
 const AboutJson: React.FC = () => {
   return (
     <div className="about-main">
       <p>&#123;</p>
       <p>&nbsp;&nbsp;"name": "Josep Ramon Ribera",</p>
-      <p>&nbsp;&nbsp;{`"languages": {`}</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;"valencian": "native",</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;"spanish": "native",</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;"english": "B2",</p>
-      <p>&nbsp;&nbsp;{`},`}</p>
       <p>&nbsp;&nbsp;{`"programming-languages-and-frameworks": {`}</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;"typescript": "really-good",</p>
       <p>&nbsp;&nbsp;&nbsp;&nbsp;"html": "really-good",</p>
@@ -32,6 +27,11 @@ const AboutJson: React.FC = () => {
         &nbsp;&nbsp;&nbsp;&nbsp;"problem-solving","self-motivation","leadership"
       </p>
       <p>&nbsp;&nbsp;]</p>
+      <p>&nbsp;&nbsp;{`"languages": {`}</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;"valencian": "native",</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;"spanish": "native",</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;"english": "B2",</p>
+      <p>&nbsp;&nbsp;{`},`}</p>
       <p>&#125;</p>
     </div>
   )
