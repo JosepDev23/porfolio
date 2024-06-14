@@ -6,6 +6,11 @@ import ProjectCard from './components/ProjectCard.astro'
   <h1 class="projects-title">My cool projects</h1>
   <div class="projects-main">
     <ProjectCard
+      imgSrc="./img/project_git_simulator.png"
+      technologies={['TypeScript', 'React', 'NextJS']}
+      url="https://github.com/JosepDev23/git-simulator"
+    />
+    <ProjectCard
       imgSrc="./img/project_price_comparator.png"
       technologies={['TypeScript', 'NestJS']}
       url="https://github.com/JosepDev23/price_comparator_backend"
@@ -19,11 +24,6 @@ import ProjectCard from './components/ProjectCard.astro'
       imgSrc="./img/project_software_chronicles.jpg"
       technologies={['TypeScript', 'React', 'NextJS', 'NestJS']}
       url="https://github.com/JosepDev23/sofware-chronicles-frontend"
-    />
-    <ProjectCard
-      imgSrc="./img/project_pokearcade.jpg"
-      technologies={['TypeScript', 'React', 'NextJS']}
-      url="https://github.com/JosepDev23/poke-arcade"
     />
   </div>
 </section>
